@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SVG Demo</title>
+  </head>
+  <body>
+    <svg id="vimage" height="500" width="500" style="border: 1px solid;">
+      <circle cx="250" cy="250" r="75" fill="yellow" stroke="black"/>
+      <!--<rect x="100" y="100" width="300" height="750" fill="blue">-->
+    </svg>
+  </body>
+
+  <style type="text/javascript">
+    var pic = document.getElementById("vimage");
+    var c = document.createElementNS(
+      "http://www.w3.org/2000/svg", "circle");
+    c.setAttribute("cx", 0);
+    c.setAttribute("cy", 0);
+    c.setAttribute("r", 100);
+    c.setAttribute("fill", "red");
+    c.setAttribute("stroke", "black");
+
+    pic.appendChild( c );
+  </style>
+</html>

@@ -77,19 +77,19 @@ var movedvd = function(){
   }
 
   if (right) {
-    x = x + 10;
+    x = x + 2;
   }
 
   else if (left) {
-    x = x - 10;
+    x = x - 2;
   }
 
   if (down) {
-    y = y + 10;
+    y = y + 2;
   }
 
   else if (up) {
-    y = y - 10;
+    y = y - 2;
   }
 }
 
