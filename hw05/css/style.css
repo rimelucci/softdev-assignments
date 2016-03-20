@@ -1,4 +1,4 @@
-.chart div{
+.chart div{  /* Derrick's Graph */
     font: 14px san-serif;
     background-color: #7F0000;
     text-align: right;
@@ -7,7 +7,7 @@
     color: white;
 }
 
-.chart2 div{
+.chart2 div{  /*Rick's Graph*/
   font: 14px san-serif;
   background-color: blue;
   text-align: right;
