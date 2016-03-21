@@ -22,6 +22,10 @@ var create_graph = function(){
 		d3.select(".chart").selectAll("div").remove();
 		rdelegates.innerHTML = "<b>Total Number of Republican Delegates:</b> 2,472 <br> <b>Number of Alloted Delegates:</b> 1,719 <br>";
 		keyhtml.innerHTML = "<hr> Key <br>";
+
+    ddelegates.innerHTML = "<b>Total Number of Democratic Delegates:</b>  4,763 <br> <b>Number of Alloted Delegates:</b> 4,050 <br>"; // Rick
+    dkeyhtml.innerHTML = "<hr> Key <br>";
+
 		rkeychart();
 		rkeychart2();
 		d3chart(repnum, repstate, repalloted);
