@@ -40,14 +40,19 @@ print passwordChecker(f)
 #* inclusion of these non-alphanumeric chars: . ? ! & # , ; : - _ *
 
 def brolicPasswordirizer( string ):
-    upperCase =  [ 1 if x in UC_LETTERS else 0 for x in string]
-    lowerCase = [ 1 if x in LC_LETTERS else 0 for x in string]
-    numbersCheck = [1 if x in numbers else 0 for x in string]
-    symbolsCheck = [1 if x in symbols else 0 for x in string]
+    #upperCase =  [ 1 if x in UC_LETTERS else 0 for x in string]
+    #lowerCase = [ 1 if x in LC_LETTERS else 0 for x in string]
+    #numbersCheck = [1 if x in numbers else 0 for x in string]
+    #symbolsCheck = [1 if x in symbols else 0 for x in string]
 
-    totalCount = upperCase.count(1) * 2 + lowerCase.count(1) + numbersCheck.count(1) * 2 + symbolsCheck.count(1) * 4
+    #totalCount = upperCase.count(1) * 2 + lowerCase.count(1) + numbersCheck.count(1) * 2 + symbolsCheck.count(1) * 4
 
-    print totalCount / 3
+    l = [1 if in UC_LETTERS else
+            2 if in LC_LETTERS else
+                3 if x in numbers else
+                    0 for x in p]
+
+        return 1 in l and 2 in l and 3 in l
 
 brolicPasswordirizer( p )
 brolicPasswordirizer( f )
